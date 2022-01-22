@@ -36,17 +36,3 @@ body{
      background-color: darkblue;
      color: white;
     }
-/*From Youssif Assem Youssif Assem Mondy Hefnawy to Everyone:  04:45 PM
-$sql = mysqli_query($conn, "SELECT groupId FROM Members WHERE email='".$_SESSION['email']."'");
-  while($row = mysqli_fetch_array($sql)){
-    if($row['groupId'] == $_GET['g']-255){
-      echo '<script>alert("Error, You Are Already in this group")</script>';
-      return;
-    }
-  }
-  $r = mysqli_query($conn, "SELECT Taxes FROM groups WHERE groupId= '".$_GET['g']."'-255");
-  if($row = mysqli_fetch_assoc($r)){
-  mysqli_query($conn, "INSERT INTO Members(email, groupId, Taxes) VALUES ('$_SESSION[email]', '$_GET[g]'-255, '$row[Taxes]')");
-  echo '<script>alert("Done, You Joined the group")</script>';
-  }
-*/
